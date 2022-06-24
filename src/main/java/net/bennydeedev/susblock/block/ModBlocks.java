@@ -21,6 +21,6 @@ public class ModBlocks {
 
     public static void registerSusBlockItem() {
         Registry.register(Registry.ITEM, new Identifier(SusBlockMod.MOD_ID, "sus_block"),
-                new BlockItem(SUS_BLOCK, new FabricItemSettings().group(ItemGroup.MISC)));
+                new BlockItem(SUS_BLOCK, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
     }
 }
