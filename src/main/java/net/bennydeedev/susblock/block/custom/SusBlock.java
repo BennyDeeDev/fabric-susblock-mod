@@ -19,6 +19,7 @@ import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
+import net.minecraft.world.explosion.Explosion.DestructionType;
 
 public class SusBlock extends Block {
     public SusBlock(Settings settings) {
@@ -57,6 +58,7 @@ public class SusBlock extends Block {
     }
 
     private void unluckyOnServer(World world, BlockPos pos, PlayerEntity player) {
+        world.createExplosion(null, null, null, pos.getX(), pos.getY(), pos.getZ(), 1, true, DestructionType.NONE);
         var playerPosBlockBelow = player.getBlockPos().down(1);
 
         List<BlockState> oldBlocks = new ArrayList<BlockState>();
