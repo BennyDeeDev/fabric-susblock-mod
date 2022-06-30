@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["YYY", "WRY", "YRY"],
+  "key": {
+    "Y": {
+      "item": "minecraft:yellow_concrete"
+    },
+    "R": {
+      "item": "minecraft:red_concrete"
+    },
+    "W": {
+      "item": "minecraft:white_concrete"
+    }
+  },
+  "result": {
+    "item": "susblock:sus_block",
+    "count": 1
+  }
+}
